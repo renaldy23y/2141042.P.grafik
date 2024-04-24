@@ -1,0 +1,142 @@
+canvas {
+  border: 2px solid #2d2d2d; /* Warna border diganti menjadi abu-abu gelap */
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(45, 45, 45, 0.5); /* Efek bayangan diganti menjadi abu-abu gelap */
+}
+
+.popup {
+  display: none;
+  position: absolute; /* Mengubah posisi menjadi absolut agar popup dapat diatur secara tepat di atas canvas */
+  width: 400px; /* Mengatur lebar popup */
+  height: 300px; /* Mengatur tinggi popup */
+  top: calc(50% - 150px); /* Mengatur posisi vertikal berdasarkan setengah dari tinggi popup */
+  left: calc(50% - 200px); /* Mengatur posisi horizontal berdasarkan setengah dari lebar popup */
+  background: linear-gradient(135deg,  #F1EEDC, #B3C8CF, #BED7DC);
+  padding: 30px;
+  border-radius: 30px;
+  color: #4CAF50;
+  text-align: center;
+  font-family:  'Arial Black', sans-serif;
+}
+
+.popup-content {
+  margin-bottom: 30px;
+}
+
+.popup button {
+  padding: 15px 30px;
+  background-color: #5D6D7E;
+  color: rgb(255, 255, 255);
+  border: 2px solid#5D6D7E;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+body {
+  background: linear-gradient(135deg, #F1EEDC, #B3C8CF, #BED7DC); /* Warna latar belakang gradasi malam hari */
+  font-family:  'Arial Black', sans-serif; /* Ganti font menjadi Gothic */
+}
+
+h1 {
+  font-size: 56px; /* Ukuran font judul diperbesar */
+  text-align: center;
+  color: #b93a3a; /* Warna judul diganti menjadi hijau */
+  margin-top: 50px;
+}
+
+p {
+  font-size: 24px; /* Ukuran font teks diperbesar */
+  color: #5D6D7E; /* Warna teks diganti menjadi abu-abu muda */
+}
+
+#startGamePopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #F1EEDC, #B3C8CF, #BED7DC); /* Warna latar belakang gradasi malam hari */
+  padding: 30px;
+  border-radius: 30px;
+  color: #4CAF50; /* Warna teks diganti menjadi hijau */
+  text-align: center;
+  font-family:  'Arial Black', sans-serif; /* Ganti font menjadi Gothic */
+}
+
+#startGameButton {
+  padding: 15px 30px;
+  background-color:#5D6D7E; /* Warna tombol diganti menjadi abu-abu gelap */
+  color: #ffffff;
+  border: 2px solid#5D6D7E;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#startGameButton:hover {
+  background-color: #4CAF50; /* Efek hover diganti menjadi hijau */
+  border-color: #4CAF50;
+}
+
+#gameOverPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg,#F1EEDC, #B3C8CF, #BED7DC); /* Warna latar belakang gradasi malam hari */
+  padding: 30px;
+  border-radius: 30px;
+  color: #4CAF50; /* Warna teks diganti menjadi hijau */
+  text-align: center;
+  font-family:  'Arial Black', sans-serif; /* Ganti font menjadi Gothic */
+}
+
+#restartButtonInPopup {
+  padding: 15px 30px;
+  background-color: #5D6D7E; /* Warna tombol diganti menjadi abu-abu gelap */
+  color: #ffffff;
+  border: 2px solid#5D6D7E;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#restartButtonInPopup:hover {
+  background-color: #4CAF50; /* Efek hover diganti menjadi hijau */
+  border-color: #4CAF50;
+}
+
+#scoreDisplay {
+  position: absolute;
+  top: 25px;
+  left: 350px; /* Sesuaikan dengan posisi yang Anda inginkan */
+  font-family: 'Arial Black', sans-serif; /* Ganti font dengan Arial Black untuk tampilan yang lebih berteknologi */
+  font-size: 15px; /* Ubah ukuran font untuk menonjolkan */
+  color: #FF6F61; /* Ubah warna font menjadi merah muda */ /* Tambahkan efek bayangan untuk menonjolkan */
+  border: 2px solid #FF6F61; /* Tambahkan border dengan warna yang sama dengan teks */
+  border-radius: 10px; /* Buat sudut-sudutnya melengkung */
+  padding: 5px 10px; /* Tambahkan padding agar tulisan tidak terlalu dekat dengan border */
+}
+
+#highScoreDisplay {
+  position: absolute;
+  top: 25px;
+  left: 850px; /* Sesuaikan dengan posisi yang Anda inginkan */
+  font-family: 'Arial Black', sans-serif; /* Ganti font dengan Arial Black untuk tampilan yang lebih berteknologi */
+  font-size: 15px; /* Ubah ukuran font untuk menonjolkan */
+  color: #5D6D7E; /* Ubah warna font menjadi biru tua */ /* Tambahkan efek bayangan untuk menonjolkan */
+  border: 2px solid #5D6D7E; /* Tambahkan border dengan warna yang sama dengan teks */
+  border-radius: 10px; /* Buat sudut-sudutnya melengkung */
+  padding: 5px 10px; /* Tambahkan padding agar tulisan tidak terlalu dekat dengan border */
+}

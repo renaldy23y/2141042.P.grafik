@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jangan sentuh Kotak</title>
+  <!-- Tautkan file style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="scoreDisplay">Skor: 0</div>
+  <div id="highScoreDisplay">Poin Tertinggi: 0</div>
+
+  <!-- Pop-up "Mulai Permainan" -->
+  <div id="startGamePopup"> 
+            SELAMAT DATANG DI KOTAK GAMES
+    <p> USAHAIN JANGAN KENA KOTAK LAIN!!</p>
+   <button id="startGameButton">Mulai Permainan</button>
+  </div>
+
+  <!-- Pop-up "Mulai Ulang Permainan" -->
+  <div id="gameOverPopup" class="popup">
+    <div class="popup-content">
+            KAMU KENA NIH?!!
+      <p>AYO COBA LAGI YUK YUK:)</p>
+      <p id="score">Skor: 0</p>
+      <p id="highScore">Poin Tertinggi: 0</p>
+      <button id="restartButtonInPopup">Mulai Ulang</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
